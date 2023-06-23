@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  margin-bottom: 20px;
+  width: auto;
+  box-sizing: content-box;
+}
+.containerCard{
+  margin-bottom: 20px;
+}
+.containerCard:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.containerCard:before{
+  opacity: 1
+}
+.spinnerContent {
+  display:flex;
+justify-content:center;
+align-items:center;
+align-items: center;
+text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.contentCard {
+  padding-top: 20px;
+  margin: 0 auto;
   align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+  width: 90%;
+}
+.CardItem{
+  height: 300px;
+  width: 100%;
+}
+.CardMain:hover{
+  box-shadow: 2px 5px 5px 1px rgb(237, 29, 36);
+}
+/*------------------------------ */
+
+
+/* Creamos el scroll del contenedor de los personajes */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 50px;
+  display: none;
+}
+.BoxContainerCharacters{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.characters{
+  cursor: pointer;
+  width:80%;
+  height:20vh;
+  background-image:url('./asset/img/characters.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:rgb(255, 255, 255);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 6px;
+  border: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.characters h1{
+  text-align: center;
+  justify-content: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 6vh;
+  text-shadow: 2px 2px 9px rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.characters:hover{
+  opacity: 0.84;
+  box-shadow: 0 9px 7px 9px rgb(34, 34, 34);
+  transform: translateY(-5px);
+}
+
+
+/* ------------------------------------------- */
+
+.BoxContainerComics{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.comics{
+  cursor: pointer;
+  width:80%;
+  height:20vh;
+  background-image:url('./asset/img/comics.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:rgb(255, 255, 255);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 6px;
+  border: 0;
+}
+
+.comics h1{
+  text-align: center;
+  justify-content: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 6vh;
+  text-shadow: 2px 2px 9px rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.comics:hover{
+  opacity: 0.84;
+  box-shadow: 0 9px 7px 9px rgb(34, 34, 34);
+  transform: translateY(-5px);
+}
+
+
+footer {
+  margin-top: 3rem;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
 }
