@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+El proyecto cuenta con un Home que contiene 2 Botones que llevan a su propia seccion, la misma cuenta con una lista de personajes y de comics respectivamente con su propio buscador independiente
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CHARACTERS:
 
-## Available Scripts
+![unknown_2023 06 23-13 01_2](https://github.com/JuanMa99z/ApiMarvel/assets/100944665/a00cb2b5-6b85-45a1-8116-7abaaacf878a)
 
-In the project directory, you can run:
+COMICS:
 
-### `npm start`
+![unknown_2023 06 23-13 14_1](https://github.com/JuanMa99z/ApiMarvel/assets/100944665/15cce183-7602-46a9-9463-0dd60ff611b8)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+las mismas son responsive tanto el Home, como las secciones Characters y Comics, estan echas con bootstrap y react-bootstrap, se adaptan en desktop, tablet y phone
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![unknown_2023 06 23-13 25_1](https://github.com/JuanMa99z/ApiMarvel/assets/100944665/7ec59f17-d079-4569-9214-e46294c14bf0)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![unknown_2023 06 23-13 22_1_1](https://github.com/JuanMa99z/ApiMarvel/assets/100944665/01ce72be-ce2f-4c67-80be-535d7b07a930)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+tuve problemas con React-router-dom y otras dependencias y No pude realizar a tiempo la Seccion de la pagina independiente para los personajes y comics para traer sus detalles(Descripcion, comics y/o personajes en los que aparecen, etc)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este es mi primer proyecto Formal en ReactJS y fue todo un aprendizaje viniendo desde hace tiempo programando en Angular, se hizo lo mejor que pudo y este es el resultado
