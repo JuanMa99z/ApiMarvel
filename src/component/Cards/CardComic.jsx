@@ -9,7 +9,7 @@ function CardComic({ comic }) {
       <Card className="CardMain">
         <Card.Img className="CardItem img-fluid"src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} />
         <Card.Body>
-          <Card.Title>{comic.name}</Card.Title>
+          <Card.Title>{comic.title}</Card.Title>
         </Card.Body>
       </Card>
     </Col>

@@ -14,13 +14,13 @@ function MainCharacters({ searchInputComic }) {
     }, [searchInputComic]);
        const getComicMarvel = async () => {
         setLoading(true)
-        let url
+        let urls
         if (searchInputComic !== '') {
-            url = `http://gateway.marvel.com/v1/public/comics?TitleStartWith=${searchInputComic}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            urls = `http://gateway.marvel.com/v1/public/comics?titleStartsWith=${searchInputComic}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         } else {
-            url = `http://gateway.marvel.com/v1/public/comics?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            urls = `http://gateway.marvel.com/v1/public/comics?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         }
-        const response = await fetch(url)
+        const response = await fetch(urls)
         const data = await response.json()
         setCard(data.data.results)
         setLoading(false)
