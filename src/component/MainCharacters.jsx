@@ -16,9 +16,9 @@ function MainCharacters({ searchInput }) {
         setLoading(true)
         let url
         if (searchInput !== '') {
-            url = `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${searchInput}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            url = `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${searchInput}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         } else {
-            url = `http://gateway.marvel.com/v1/public/characters?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            url = `https://gateway.marvel.com/v1/public/characters?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         }
         const response = await fetch(url)
         const data = await response.json()

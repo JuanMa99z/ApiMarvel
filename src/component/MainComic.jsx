@@ -16,9 +16,9 @@ function MainCharacters({ searchInputComic }) {
         setLoading(true)
         let urls
         if (searchInputComic !== '') {
-            urls = `http://gateway.marvel.com/v1/public/comics?titleStartsWith=${searchInputComic}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            urls = `https://gateway.marvel.com/v1/public/comics?titleStartsWith=${searchInputComic}&ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         } else {
-            urls = `http://gateway.marvel.com/v1/public/comics?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
+            urls = `https://gateway.marvel.com/v1/public/comics?ts=1000&apikey=a00b1731d90037b001eea36719c623aa&hash=7ff1e7c9c4aed14accaa2e8806447d7b&limit=20`;
         }
         const response = await fetch(urls)
         const data = await response.json()
